@@ -1,4 +1,11 @@
 #!/bin/bash
 
+if [ ! -d rails-test ]; then
+    git clone https://github.com/mo-nathan/rails-test.git
+    echo Cloned mo-nathan/rails-test
+else
+    echo rails-test directory exists
+fi
+
 docker-compose build
 docker-compose up -d
