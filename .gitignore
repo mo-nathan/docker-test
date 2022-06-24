@@ -1,3 +1,5 @@
+rails-test
+*~
 *.rbc
 capybara-*.html
 .rspec
